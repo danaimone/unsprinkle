@@ -50,9 +50,15 @@ table {
 
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'InterVariable', sans-serif;
+  
+  @supports (font-variation-settings: normal) {
+    font-family: 'InterVariable';
+  }
+  
   -webkit-font-smoothing: antialiased;
   font-synthesis: none;
+}
 }
 
 html {
